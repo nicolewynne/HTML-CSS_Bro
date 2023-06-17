@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <a href="http://www.google.com">
+      <button disabled>click me</button>
+    </a>
+    <br /><br />
+    <button
+      onclick="doSomething()"
+      style="width: 100px; height: 50px; font-size: 20px"
+    >
+      Click Me
+    </button>
+    <p id="test" style="font-size: 30px">Hello</p>
+    <script>
+      function doSomething() {
+        document.getElementById("test").innerHTML = "Goodbye";
+      }
+    </script>
+  </body>
+</html>
